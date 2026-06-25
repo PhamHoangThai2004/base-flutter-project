@@ -37,6 +37,13 @@ pubspec.lock
 # Symbolication related
 app.*.symbols
 
+# Generated plugin registrant
+**/GeneratedPluginRegistrant.*
+lib/generated/
+injection.config.dart
+*.g.dart
+*.freezed.dart
+
 # Obfuscation related
 app.*.map.json
 
