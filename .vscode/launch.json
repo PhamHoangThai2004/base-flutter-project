@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Flutter Run (DEV)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main/main_dev.dart",
+            "args": [
+                "--flavor",
+                "dev"
+            ]
+        },
+        {
+            "name": "Flutter Run (PROD)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main/main_prod.dart",
+            "args": [
+                "--flavor",
+                "prod"
+            ]
+        }
+    ]
+}
