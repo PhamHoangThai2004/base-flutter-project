@@ -22,6 +22,10 @@ dependencies:
   injectable: ^2.7.1+4
   flutter_svg: ^2.3.0
 
+  # Http
+  dio: ^5.9.2
+  curl_logger_dio_interceptor: ^1.0.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
