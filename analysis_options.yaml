@@ -1,6 +1,8 @@
 include: package:flutter_lints/flutter.yaml
 
 analyzer:
+  errors:
+    unused_field: ignore
   exclude:
     - "lib/generated/**"
     - "lib/**/*.config.dart"

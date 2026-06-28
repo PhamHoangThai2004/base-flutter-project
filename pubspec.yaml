@@ -30,6 +30,9 @@ dependencies:
   dio: ^5.9.2
   curl_logger_dio_interceptor: ^1.0.1
 
+  # Local Storage
+  shared_preferences: ^2.5.5
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -1,15 +1,16 @@
+import 'package:base_flutter_project/core/base/local/app_preferences.dart';
 import 'package:base_flutter_project/core/base/remote/remote.src.dart';
 import 'package:base_flutter_project/main/app_config.dart';
 import 'package:curl_logger_dio_interceptor/curl_logger_dio_interceptor.dart';
 import 'package:dio/dio.dart';
 
 class ApiClient {
-  static final ApiClient _instance = ApiClient._internal();
+  static final _instance = ApiClient._();
   late final Dio _dio;
 
   factory ApiClient() => _instance;
 
-  ApiClient._internal() {
+  ApiClient._() {
     _dio = Dio(
       BaseOptions(
         baseUrl: AppConfig.baseUrl,
@@ -31,7 +32,8 @@ class ApiClient {
     if (hasToken) {
       // Add token to headers if needed
       requestOptions.headers ??= {};
-      requestOptions.headers!['Authorization'] = 'Bearer your_token_here';
+      final token = AppPreferences.instance.accessToken;
+      requestOptions.headers!['Authorization'] = 'Bearer $token';
     }
 
     try {

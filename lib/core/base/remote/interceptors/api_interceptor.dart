@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:io';
+import 'package:base_flutter_project/core/base/local/app_preferences.dart';
 import 'package:base_flutter_project/main/app_config.dart';
 import 'package:curl_logger_dio_interceptor/curl_logger_dio_interceptor.dart';
 import 'package:dio/dio.dart';
@@ -68,7 +69,7 @@ class ApiInterceptor extends InterceptorsWrapper {
   }
 
   Future<String> _refreshToken() async {
-    const refreshToken = 'Your refresh token here';
+    final refreshToken = AppPreferences.instance.refreshToken;
     if (refreshToken.isEmpty) {
       throw Exception('Không thể lấy refresh token!');
     }
@@ -79,6 +80,7 @@ class ApiInterceptor extends InterceptorsWrapper {
       final response = await dio.post(_refreshTokenPath, data: {'refreshToken': refreshToken});
       final newToken = response.data['data']['accessToken'] as String;
       // You can also update the refresh token if your API returns a new one
+      await AppPreferences.instance.saveAccessToken(newToken);
       return newToken;
     } on Exception catch (e) {
       throw Exception('Không thể lấy accessToken! $e');
