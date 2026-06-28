@@ -17,6 +17,9 @@ dependencies:
   cupertino_icons: ^1.0.8
   google_fonts: ^8.1.0
 
+  # Navigation
+  go_router: ^17.3.0
+
   # State Management
   flutter_bloc: ^9.1.1
   equatable: ^2.0.8
@@ -32,6 +35,9 @@ dependencies:
 
   # Local Storage
   shared_preferences: ^2.5.5
+
+  # Utils
+  easy_localization: ^3.0.8
 
 dev_dependencies:
   flutter_test:

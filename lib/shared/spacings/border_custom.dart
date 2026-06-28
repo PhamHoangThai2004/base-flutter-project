@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-BorderRadiusGeometry borderAll(double value) {
+BorderRadius borderAll(double value) {
    return BorderRadius.all(Radius.circular(value));
  }
 
- BorderRadiusGeometry borderCircular(double value) {
+ BorderRadius borderCircular(double value) {
    return BorderRadius.circular(value);
  }
 
- BorderRadiusGeometry borderOnly({
+ BorderRadius borderOnly({
    double topLeft = 0,
    double topRight = 0,
    double bottomLeft = 0,

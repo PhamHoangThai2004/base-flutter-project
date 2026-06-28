@@ -15,3 +15,4 @@ class HorizontalSpace extends StatelessWidget {
 Widget width2 = const HorizontalSpace(width: AppDimens.d2);
 Widget width4 = const HorizontalSpace(width: AppDimens.d4);
 Widget width8 = const HorizontalSpace(width: AppDimens.d8);
+Widget width10 = const HorizontalSpace(width: AppDimens.d10);

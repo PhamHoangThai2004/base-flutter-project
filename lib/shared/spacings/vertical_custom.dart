@@ -15,3 +15,8 @@ class VerticalSpace extends StatelessWidget {
 Widget height2 = const VerticalSpace(height: AppDimens.d2);
 Widget height4 = const VerticalSpace(height: AppDimens.d4);
 Widget height8 = const VerticalSpace(height: AppDimens.d8);
+Widget height12 = const VerticalSpace(height: AppDimens.d12);
+Widget height14 = const VerticalSpace(height: AppDimens.d14);
+Widget height16 = const VerticalSpace(height: AppDimens.d16);
+Widget height20 = const VerticalSpace(height: AppDimens.d20);
+Widget height24 = const VerticalSpace(height: AppDimens.d24);

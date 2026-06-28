@@ -1,0 +1,1 @@
+// In here can be used to get the size of the screen and make the app responsive.

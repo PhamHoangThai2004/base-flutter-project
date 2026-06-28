@@ -62,7 +62,7 @@ final class ToastCustom {
                   ],
                 ),
               ),
-              ButtonCustom(
+              CupertinoCustom(
                 onPressed: cancel,
                 child: Container(
                   padding: all(AppDimens.p4),
