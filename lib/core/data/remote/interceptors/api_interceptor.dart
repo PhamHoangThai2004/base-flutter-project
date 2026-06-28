@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:io';
-import 'package:base_flutter_project/core/base/local/app_preferences.dart';
+import 'package:base_flutter_project/core/data/local/app_preferences.dart';
 import 'package:base_flutter_project/main/app_config.dart';
 import 'package:curl_logger_dio_interceptor/curl_logger_dio_interceptor.dart';
 import 'package:dio/dio.dart';

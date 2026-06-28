@@ -1,0 +1,1 @@
+// In here you can add any utility functions that you want to use throughout your app. For example, you might include functions for formatting dates, validating input, or handling common calculations. Make sure to keep the functions organized and well-documented so that they are easy to use and maintain.

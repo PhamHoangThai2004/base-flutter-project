@@ -1,4 +1,4 @@
-import 'package:base_flutter_project/core/base/remote/remote.src.dart';
+import 'package:base_flutter_project/core/data/remote/remote.src.dart';
 import 'package:dio/dio.dart';
 
 class BaseDataSource {

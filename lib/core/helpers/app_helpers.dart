@@ -1,0 +1,1 @@
+// in here we can put some helper functions that we want to use in the app, for example, show toast, show dialog, etc.
