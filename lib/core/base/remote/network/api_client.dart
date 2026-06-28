@@ -20,7 +20,7 @@ class ApiClient {
     )..interceptors.addAll([ApiInterceptor(), CurlLoggerDioInterceptor(printOnSuccess: true)]);
   }
 
-  Future<BaseResponse<T>> callApi<T>({
+  Future<BaseResponse<T>> sendRequest<T>({
     required HttpMethod method,
     required String url,
     Map<String, dynamic>? data,
